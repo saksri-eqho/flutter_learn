@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_learn/pages/place/detail.dart';
 
-class PlacesScreen extends StatefulWidget {
-const PlacesScreen({super.key});
+class PlacesPage extends StatefulWidget {
+  const PlacesPage({super.key});
 
   @override
   State<StatefulWidget> createState() {
-    return _PlacesScreen();
+    return _PlacesPage();
   }
 }
 
-class _PlacesScreen extends State<PlacesScreen> {
+class _PlacesPage extends State<PlacesPage> {
   List<dynamic> _places = [];
 
   @override
@@ -22,8 +22,9 @@ class _PlacesScreen extends State<PlacesScreen> {
   }
 
   Future<void> _fetchPlaces() async {
-    final response =
-      await http.get(Uri.parse('https://www.melivecode.com/api/attractions'));
+    final response = await http.get(
+      Uri.parse('https://www.melivecode.com/api/attractions'),
+    );
 
     setState(() {
       _places = jsonDecode(response.body);
@@ -31,16 +32,18 @@ class _PlacesScreen extends State<PlacesScreen> {
   }
 
   @override
-  Widget build(BuildContext context){
-    return Scaffold(appBar: AppBar(
-        title: const Text('Places'),
-      ),
+  Widget build(BuildContext context) {
+    return Scaffold(
+      // appBar: AppBar(
+      //   title: const Text('Places'),
+      // ),
       body: ListView.builder(
         itemCount: _places.length,
         itemBuilder: (context, index) {
           final place = _places[index];
           return ListTile(
-              leading: SizedBox(width: MediaQuery.of(context).size.width * 0.2,
+            leading: SizedBox(
+              width: MediaQuery.of(context).size.width * 0.2,
               child: Image.network(place['coverimage']),
             ),
             title: Row(children: [Text(place['name'])]),
@@ -50,7 +53,10 @@ class _PlacesScreen extends State<PlacesScreen> {
               overflow: TextOverflow.ellipsis,
             ),
             onTap: () => Navigator.push(
-              context, MaterialPageRoute(builder: (context) => PalceDetailScreen(id: place['id']))
+              context,
+              MaterialPageRoute(
+                builder: (context) => PalceDetailPage(id: place['id']),
+              ),
             ),
           );
         },

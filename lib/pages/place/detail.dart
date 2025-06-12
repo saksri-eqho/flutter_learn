@@ -2,18 +2,18 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-class PalceDetailScreen extends StatefulWidget {
+class PalceDetailPage extends StatefulWidget {
   final int id;
 
-  const PalceDetailScreen({super.key, required this.id});
+  const PalceDetailPage({super.key, required this.id});
 
   @override
   State<StatefulWidget> createState() {
-    return _PalceDetailScreenState();
+    return _PalceDetailPageState();
   }
 }
 
-class _PalceDetailScreenState extends State<PalceDetailScreen> {
+class _PalceDetailPageState extends State<PalceDetailPage> {
   Map<String, dynamic>? _placeDetail;
 
   @override

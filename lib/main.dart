@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/pages/place/index.dart';
+import 'package:flutter_learn/pages/auth/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,11 +19,9 @@ class MyApp extends StatelessWidget {
       //     backgroundColor: Colors.green,
       //     foregroundColor: Colors.white,
       //   ),
-      
       //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       // ),
-      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: const PlacesScreen(),
+      home: const LoginPage(),
     );
   }
 }
