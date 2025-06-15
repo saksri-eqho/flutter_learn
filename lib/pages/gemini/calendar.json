@@ -1,0 +1,47 @@
+{
+  "events": {
+    "2025-06-10": [
+      {
+        "type": "holiday",
+        "name": "National Day"
+      }
+    ],
+    "2025-06-16": [
+      {
+        "type": "leave",
+        "leave_type": "Annual Leave",
+        "employee": {
+          "first_name": "Liam",
+          "last_name": "Patel",
+          "image_url": "https://placehold.co/64x64/E9ECEF/495057?text=LP"
+        }
+      },
+      {
+        "type": "leave",
+        "leave_type": "Sick Leave",
+        "employee": {
+          "first_name": "Zoe",
+          "last_name": "Bell",
+          "image_url": "https://placehold.co/64x64/E9ECEF/495057?text=ZB"
+        }
+      }
+    ],
+    "2025-06-20": [
+      {
+        "type": "leave",
+        "leave_type": "Work From Home",
+        "employee": {
+          "first_name": "Yara",
+          "last_name": "Shah",
+          "image_url": "https://placehold.co/64x64/E9ECEF/495057?text=YS"
+        }
+      }
+    ],
+    "2025-06-25": [
+      {
+        "type": "holiday",
+        "name": "Founders Day"
+      }
+    ]
+  }
+}

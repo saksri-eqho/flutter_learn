@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/pages/auth/login.dart';
+// import 'package:flutter_learn/pages/auth/login_gpt.dart';
+import 'package:flutter_learn/pages/gemini/calendar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       //   ),
       //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       // ),
-      home: const LoginPage(),
+      home: const CalendarPage(),
     );
   }
 }

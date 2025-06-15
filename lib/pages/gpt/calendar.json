@@ -1,0 +1,37 @@
+{
+  "2025-06-17": {
+    "holidays": [
+      {
+        "title": "National Unity Day"
+      }
+    ],
+    "leaves": [
+      {
+        "first_name": "Alice",
+        "last_name": "Smith",
+        "leave_type": "Annual Leave"
+      },
+      {
+        "first_name": "Bob",
+        "last_name": "Jones",
+        "leave_type": "Sick Leave"
+      }
+    ]
+  },
+  "2025-06-20": {
+    "leaves": [
+      {
+        "first_name": "Charlie",
+        "last_name": "Brown",
+        "leave_type": "WRA"
+      }
+    ]
+  },
+  "2025-06-25": {
+    "holidays": [
+      {
+        "title": "Mid-Year Break"
+      }
+    ]
+  }
+}
